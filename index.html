@@ -1,16 +1,331 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Darsh Singhee Animated Portfolio</title>
-    <meta property="og:image" content="https://bolt.new/static/og_default.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Darsh Singhee - Young Coder</title>
+  <link rel="stylesheet" href="src/styles.css" />
 </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<body>
+  <!-- HERO SECTION -->
+  <section id="hero" class="hero">
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-icon-wrapper">
+          <div class="icon-glow"></div>
+          <svg class="hero-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+        </div>
+
+        <h1 class="hero-title">Hi, I'm <span class="text-gradient">Darsh</span></h1>
+
+        <h2 class="hero-subtitle">A Young Coder</h2>
+
+        <p class="hero-description">
+          12-year-old student passionate about coding, building websites, and creating awesome apps.
+          I love turning ideas into reality with code!
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary glow-button">
+            <span class="btn-icon">✨</span>
+            View My Work
+          </a>
+          <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-arrow">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+        <p class="section-subtitle">A young developer with big dreams and endless curiosity</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card" data-index="0">
+          <div class="card-inner">
+            <div class="card-icon-bg">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h3 class="card-title">Love for Coding</h3>
+            <p class="card-description">I started coding at a young age and fell in love with creating things through code. Every project is a new adventure!</p>
+          </div>
+        </div>
+
+        <div class="about-card" data-index="1">
+          <div class="card-inner">
+            <div class="card-icon-bg">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="1"></circle>
+                <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0"></path>
+                <path d="M12 7v5l3 3"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Creative Problem Solver</h3>
+            <p class="card-description">I enjoy tackling challenges and finding creative solutions. Coding is like solving puzzles, and I love puzzles!</p>
+          </div>
+        </div>
+
+        <div class="about-card" data-index="2">
+          <div class="card-inner">
+            <div class="card-icon-bg">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Always Learning</h3>
+            <p class="card-description">Technology is always evolving, and so am I. I'm constantly learning new skills and exploring new technologies.</p>
+          </div>
+        </div>
+
+        <div class="about-card" data-index="3">
+          <div class="card-inner">
+            <div class="card-icon-bg">
+              <svg class="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h3 class="card-title">Passionate Builder</h3>
+            <p class="card-description">From small apps to full websites, I pour my heart into every project. Seeing my creations come to life is the best feeling!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My <span class="text-gradient">Projects</span></h2>
+        <p class="section-subtitle">Check out some of the cool things I've built</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card" data-index="0">
+          <div class="project-header calculator"></div>
+          <div class="project-content">
+            <h3 class="project-title">Calculator App</h3>
+            <p class="project-description">A fully functional calculator with a modern UI. Performs basic arithmetic operations with smooth animations.</p>
+            <a href="#" class="project-link">
+              View Project
+              <span class="link-icon">→</span>
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card" data-index="1">
+          <div class="project-header scissors"></div>
+          <div class="project-content">
+            <h3 class="project-title">Rock Paper Scissors</h3>
+            <p class="project-description">Interactive game with score tracking and animations. Play against the computer and see who wins!</p>
+            <a href="#" class="project-link">
+              View Project
+              <span class="link-icon">→</span>
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card" data-index="2">
+          <div class="project-header portfolio"></div>
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website</h3>
+            <p class="project-description">This very website! Built with React, TypeScript, and Tailwind CSS. Features smooth animations and responsive design.</p>
+            <a href="#" class="project-link">
+              View Project
+              <span class="link-icon">→</span>
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+
+        <div class="project-card" data-index="3">
+          <div class="project-header password"></div>
+          <div class="project-content">
+            <h3 class="project-title">Password Generator</h3>
+            <p class="project-description">Secure password generator with customizable options. Create strong passwords with just one click!</p>
+            <a href="#" class="project-link">
+              View Project
+              <span class="link-icon">→</span>
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My <span class="text-gradient">Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-badge" data-skill="HTML" data-level="90">
+          <div class="skill-percentage">90%</div>
+          <div class="skill-name">HTML</div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+
+        <div class="skill-badge" data-skill="CSS" data-level="85">
+          <div class="skill-percentage">85%</div>
+          <div class="skill-name">CSS</div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+
+        <div class="skill-badge" data-skill="JavaScript" data-level="80">
+          <div class="skill-percentage">80%</div>
+          <div class="skill-name">JavaScript</div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+
+        <div class="skill-badge" data-skill="TypeScript" data-level="75">
+          <div class="skill-percentage">75%</div>
+          <div class="skill-name">TypeScript</div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+
+        <div class="skill-badge" data-skill="React" data-level="80">
+          <div class="skill-percentage">80%</div>
+          <div class="skill-name">React</div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+
+        <div class="skill-badge" data-skill="Tailwind CSS" data-level="85">
+          <div class="skill-percentage">85%</div>
+          <div class="skill-name">Tailwind CSS</div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+
+        <div class="skill-badge" data-skill="Git" data-level="70">
+          <div class="skill-percentage">70%</div>
+          <div class="skill-name">Git & GitHub</div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+
+        <div class="skill-badge" data-skill="Responsive" data-level="85">
+          <div class="skill-percentage">85%</div>
+          <div class="skill-name">Responsive Design</div>
+          <div class="skill-bar">
+            <div class="skill-fill"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind or just want to say hi? Drop me a message!</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Your Email</label>
+              <div class="form-input-wrapper">
+                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <input type="email" id="email" name="email" class="form-input" placeholder="your.email@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Your Message</label>
+              <div class="form-textarea-wrapper">
+                <svg class="form-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project or just say hi!" rows="5" required></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary glow-button btn-full">
+              <span class="btn-icon">➤</span>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
+          <span class="footer-text">Darsh Singhee</span>
+        </div>
+
+        <p class="footer-subtitle">
+          Made with <svg class="heart-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg> by a 12-year-old coder
+        </p>
+
+        <p class="footer-year" id="yearFooter">2025 - Keep Learning, Keep Building</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="src/script.js"></script>
+</body>
 </html>
